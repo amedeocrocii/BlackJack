@@ -67,7 +67,7 @@ def calculate_total(hand, has_hit_after_ace=False):
             aces += 1
 
     if has_hit_after_ace:
-        total -= aces * 10  #
+        total -= aces * 10
     else:
         while total > 21 and aces:
             total -= 10
